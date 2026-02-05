@@ -1,3 +1,10 @@
+metadata:
+      labels:
+        app: hello-world
+      annotations:
+        vault.hashicorp.com/agent-inject: "true"
+        vault.hashicorp.com/role: "webapp"
+        vault.hashicorp.com/agent-inject-secret-credentials.txt: "secret/data/webapp/config"
 apiVersion: apps/v1
 kind: Deployment
 metadata:
